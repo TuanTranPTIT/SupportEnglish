@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="static/images/logo-playstore.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="english.html">Chủ Đề Mới</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Dịch Vụ</a></li>
+                <li><a href="#">Liên Hệ</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <!-- Menu ẩn/hiện lịch sử -->
+        <div class="sidebar">
+            <div class="history-button-container">
+                <img id="historyButton" src="static/images/menu.png" alt="Xem lịch sử" onclick="toggleHistory()">
+            </div>
+
+            <div id="historyMenu" class="hidden">
+                <h2>Lịch sử</h2>
+                <ul id="historyList" style="padding: 10px;">
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div style="margin-bottom: 20px">
+                <p id="datetime"></p>
+            </div>
+            <div class="input-container">
+                <input type="text" id="titleInput" placeholder="Nhập tiêu đề đoạn văn">
+                <button onclick="submitTitle()" style="cursor: pointer">Gửi</button>
+            </div>
+            <div class="text-container">
+                <div class="text-box">
+                    <h2>Tiếng Anh</h2>
+                    <p id="englishText"></p>
+                </div>
+                <div class="text-box">
+                    <h2>Tiếng Việt</h2>
+                    <p id="vietnameseText"></p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <audio id="myAudio-en" controls autoplay>
+            <source id="audioSource-en" src="">
+        </audio>
+                <audio id="myAudio-vn" controls style="margin-left: 11%;">
+                <source id="audioSource-vn" src="">            </audio>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><img style="height: 40px; border-radius: 10px;" src="static/images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img style="height: 40px; border-radius: 10px;" src="static/images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img style="height: 40px; border-radius: 10px;" src="static/images/instagram.jpeg" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

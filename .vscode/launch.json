@@ -1,0 +1,64 @@
+{
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Spring Boot-ApiGatewayApplication<ApiGateway>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "org.example.apigateway.ApiGatewayApplication",
+			"projectName": "ApiGateway",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-EnglishServiceApplication<english-service>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "org.example.englishservice.EnglishServiceApplication",
+			"projectName": "english-service",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-EurekaServerApplication<EurekaServer>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "org.example.eurekaserver.EurekaServerApplication",
+			"projectName": "EurekaServer",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-TextgenerationServiceApplication<textgeneration-service>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "org.example.textgenerationservice.TextgenerationServiceApplication",
+			"projectName": "textgeneration-service",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-TranslateServiceApplication<translate-service>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "org.example.translateservice.TranslateServiceApplication",
+			"projectName": "translate-service",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-VoiceServiceApplication<voice-service>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"mainClass": "org.example.voiceservice.VoiceServiceApplication",
+			"projectName": "voice-service",
+			"args": "",
+			"envFile": "${workspaceFolder}/.env"
+		}
+	]
+}
